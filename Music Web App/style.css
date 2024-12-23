@@ -162,7 +162,7 @@ nav >  :nth-child(1) img{
 .leftelements1{
     /* border: 1px solid blue; */
     background-color: #1f1f1f;
-    margin: 8px 0px;
+    margin: 8px 10px;
     padding: 16px 20px;
     color: #ffffffe8;
     border-radius: 10px;
@@ -262,54 +262,60 @@ nav >  :nth-child(1) img{
     /* border: 1.5px solid rgb(255, 255, 255); */
     width: 70vw;
     height: 88vh;
-    margin: 10px;
-    background-image: linear-gradient(#2c2c2c,#121212);
-    /* justify-content: center; */
-    padding: 10px 10px 14px 14px;
+    margin: 10px 10px;
+    /* background-image: linear-gradient(,#2c2c2c 5%,#121212 90%); */
+    background-image: linear-gradient(to top,#121212 80%,#2a2a2a) ;
+    
+    padding: 20px 10px 14px 14px;
     overflow-y:scroll;
     scrollbar-color: #8d8d8d38 #1f1f1f;
     overflow-x: hidden;
 }
-.righthead{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
-}
-.rightheading{
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
-}
-.righthead a{
-    color:#b3b3b3;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-}
-.righthead a :hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-.rightlist{
-    display: flex;
-    align-items: center ;
-    overflow-x: scroll;
-    scrollbar-color: #8d8d8d38 #1f1f1f;
-    /*overflow-x: hidden; */
+.spotifyplaylist{
+    /* border: 1px solid red; */
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 16px;
+    margin-top: 20px ;
 
 }
-.card{
-    color: white;
-    font-family:sans-serif;
-    font-weight: 10;
+.cardcontainer{
+    background-color: #1f1f1f;
     display: flex;
-    flex-direction: column;
-    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 5px;
 }
-.rightlist img{
-    width: 190px;
-    margin: 10px ;
+.playbar{
+    background-color: aquamarine;
+    position: absolute;
+    width: 100% ;
+    bottom: 0;
+    padding: 15px;
+    color: black;
 }
+.card{
+    position: relative;
+    /* border: 2px solid blue; */
+    width: 180px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.play{
+    position: absolute;
+    /* background-color: rebeccapurple; */
+    right: 10px;
+    top: 150px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 200px;
+}
+
+
+
 
 .rightfoot{
     display: grid;
